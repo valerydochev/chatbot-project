@@ -1,16 +1,52 @@
-# React + Vite
+# 🤖 Chatbot Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a small AI-powered chatbot project built with **React**, **Vite**, and a local **LLaMA 3 model** served via **Ollama**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+- Interactive chat interface (frontend in React)
+- Local AI responses using Ollama
+- Express.js backend to connect the AI with the frontend
+- Clean, minimal design
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Tech Stack
+- **Frontend:** React + Vite  
+- **Backend:** Node.js + Express  
+- **AI Model:** LLaMA 3 (via Ollama)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ How to Run Locally
+
+Follow these steps to start the chatbot on your machine 👇
+
+### 1️⃣ Install dependencies
+If you haven’t installed them yet, run:
+npm install
+
+### 2️⃣ Start the Ollama AI server
+Make sure Ollama is installed and running:
+ollama serve
+
+Then, load the model (if you haven’t already):
+ollama pull llama3.1
+
+### 3️⃣ Run the backend server
+Start your local Node.js API server:
+npm run ai  
+(you should see: AI server listening on http://localhost:8787)
+
+### 4️⃣ Run the frontend (React app)
+Open a new terminal and start the Vite development server:
+npm run dev  
+(you’ll see: Local: http://localhost:5173/)
+
+### 5️⃣ Chat with your AI 🤖  
+Now open http://localhost:5173 in your browser and start chatting!
+
+---
+
+💡 Created by **Valery Dochev** — experimenting with local AI chatbots and React.
